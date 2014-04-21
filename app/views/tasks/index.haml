@@ -1,0 +1,13 @@
+%div{"data-role" => "header"}
+  %h1
+    My Tasks
+%div{"data-role" => "content"}
+  %ol{"data-role" => "listview"}
+    - @tasks.each do |task|
+      %li
+        %h2= task.content
+      = link_to "Complete", task, method: "delete", "data-role" => "button", "data-inline" => "true"
+%br
+%br
+%div{"data-role" => "footer", "data-role" => "button"}
+  = link_to 'New Task', new_task_path, "data-role" => "button"

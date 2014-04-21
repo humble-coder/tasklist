@@ -32,6 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'database_cleaner'
+  gem 'capybara'
+end
+
 gem 'jquery_mobile_rails'
 gem 'haml'
 gem "haml-rails"
