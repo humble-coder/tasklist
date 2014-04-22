@@ -8,11 +8,11 @@ feature 'User adds task' do
   end
 
 	scenario 'successfully' do
-		fill_in 'Content', with: 'New Task'
+		fill_in 'Content', with: 'Some Task'
 		click_button('Create Task')
 
 		expect(page).to have_content('My Tasks')
-		expect(page).to have_content('New Task')
+		expect(page).to have_content('Some Task')
 	end
 
 	scenario 'without filling in name of task' do

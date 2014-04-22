@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :task do
-    content "New Task"
+    content "Some Task"
   end
 end
